@@ -1,0 +1,7 @@
+Herdr 0.9.1 lab session fm-lab-passive-3730680-13504, pane w1:p1 = Claude Code 2.1.289 fullscreen (CLAUDE_CODE_NO_FLICKER=1), idle, transcript LINE-1..LINE-120, viewport top row LINE-90.
+A background observer polled 'pane read --source visible --format ansi' continuously and logged the first LINE-n on screen while each read ran.
+old-text-1 | raw herdr pane read --source recent --lines 200 (old read shape) | viewport top-row sequence: LINE-90 LINE-91 LINE-90 | samples=568
+old-text-2 | raw herdr pane read --source recent --lines 200 (old read shape) | viewport top-row sequence: LINE-90 LINE-91 LINE-90 | samples=570
+base-cap | fm_backend_capture herdr (base commit 1f3e769) | viewport top-row sequence: LINE-90 LINE-91 LINE-90 | samples=583
+new-cap-1 | fm_backend_capture herdr (this change 6f0db6a) | viewport top-row sequence: LINE-90 | samples=565
+new-cap-2 | fm_backend_capture herdr (this change 6f0db6a) | viewport top-row sequence: LINE-90 | samples=581

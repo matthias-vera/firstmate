@@ -1,0 +1,40 @@
+  LINE-90
+  LINE-91
+  LINE-92
+  LINE-93
+  LINE-94
+  LINE-95
+  LINE-96
+  LINE-97
+  LINE-98
+  LINE-99
+  LINE-100
+  LINE-101
+  LINE-102
+  LINE-103
+  LINE-104
+  LINE-105
+  LINE-106
+  LINE-107
+  LINE-108
+  LINE-109
+  LINE-110
+  LINE-111
+  LINE-112
+  LINE-113
+  LINE-114
+  LINE-115
+  LINE-116
+  LINE-117
+  LINE-118
+  LINE-119
+  LINE-120
+
+✻ Churned for 6s · done 3:35 AM
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⚠ Transcript saving is off — inherited CLAUDE_CODE_CHILD_SESSION marker · restart with CLAUDE_CODE_FORCE_SESSION_P…
+  Opus 5.5 (medium) v2.1.289 | proj | ctx 21k/1M (2%) | 5h: 64% (resets 1h14m) | 7d: 83% (resets 1d13h)
+  ⏵⏵ auto mode on (shift+tab to cycle)

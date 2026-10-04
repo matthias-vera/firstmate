@@ -1,0 +1,72 @@
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --source recent --lines 200
+cmd rc=2
+observer samples: 396; distinct top visible LINE values in order:
+LINE-90 
+output lines: 0; CR count: 0; ESC count: 0
+first LINE in output: 
+stderr: error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+herdr invocations by adapter: 0 read call(s): 
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1
+cmd rc=2
+observer samples: 395; distinct top visible LINE values in order:
+LINE-90 
+output lines: 0; CR count: 0; ESC count: 0
+first LINE in output: 
+stderr: error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+herdr invocations by adapter: 0 read call(s): 
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --source=recent-unwrapped --lines=200
+cmd rc=2
+observer samples: 393; distinct top visible LINE values in order:
+LINE-90 
+output lines: 0; CR count: 0; ESC count: 0
+first LINE in output: 
+stderr: error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+herdr invocations by adapter: 0 read call(s): 
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --lines 200 --source recent --format text
+cmd rc=2
+observer samples: 397; distinct top visible LINE values in order:
+LINE-90 
+output lines: 0; CR count: 0; ESC count: 0
+first LINE in output: 
+stderr: error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+herdr invocations by adapter: 0 read call(s): 
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 agent read w1:p1 --lines 200
+cmd rc=2
+observer samples: 390; distinct top visible LINE values in order:
+LINE-90 
+output lines: 0; CR count: 0; ESC count: 0
+first LINE in output: 
+stderr: error: refusing 'herdr agent read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+herdr invocations by adapter: 0 read call(s): 
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --source recent --lines 200 --format ansi
+cmd rc=0
+observer samples: 384; distinct top visible LINE values in order:
+LINE-90 
+output lines: 39; CR count: 39; ESC count: 56
+first LINE in output: LINE-90
+stderr: 
+herdr invocations by adapter: 1 read call(s): pane read w1:p1 --source recent --lines 200 --format ansi --session fm-lab-passive-3730680-13504;
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --source visible
+cmd rc=0
+observer samples: 402; distinct top visible LINE values in order:
+LINE-90 
+output lines: 40; CR count: 0; ESC count: 0
+first LINE in output: LINE-90
+stderr: 
+herdr invocations by adapter: 1 read call(s): pane read w1:p1 --source visible --session fm-lab-passive-3730680-13504;
+
+### fm_backend_herdr_cli fm-lab-passive-3730680-13504 pane read w1:p1 --source recent --lines 200 --ansi
+cmd rc=0
+observer samples: 387; distinct top visible LINE values in order:
+LINE-90 
+output lines: 39; CR count: 39; ESC count: 56
+first LINE in output: LINE-90
+stderr: 
+herdr invocations by adapter: 1 read call(s): pane read w1:p1 --source recent --lines 200 --ansi --session fm-lab-passive-3730680-13504;
+

@@ -1,0 +1,16 @@
+shell pane: w1:p2
+{"pane_id":"w1:p2","agent":null,"scroll":{"max_offset_from_bottom":268,"offset_from_bottom":0,"viewport_rows":40}}
+lines=200 new_rows=200 base_rows=200 new_sha=e3c3ee34c49ecc4d base_sha=e3c3ee34c49ecc4d CR_in_new=0 ESC_in_new=0 IDENTICAL
+lines=20 new_rows=20 base_rows=20 new_sha=b727f11c086901c0 base_sha=b727f11c086901c0 CR_in_new=0 ESC_in_new=0 IDENTICAL
+lines=3 new_rows=3 base_rows=3 new_sha=58b5939cd6e3f4fb base_sha=58b5939cd6e3f4fb CR_in_new=0 ESC_in_new=0 IDENTICAL
+--- new capture lines=3 (cat -A):
+$
+/tmp/fmhl.jGsx/proj$
+M-bM-^]M-/$
+--- first/last rows of new capture lines=200:
+PRI-105
+❯
+lines=400 rows new=308 base=308 IDENTICAL
+3:M-bM-^]M-/ printf "\033[1;31mred-row\033[0m   \n"; for i in $(seq 1 300); do echo "PRI-$i   "; done; printf "tail-row\t \n"$
+4:red-row$
+5-PRI-1$
