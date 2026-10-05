@@ -1,0 +1,45 @@
+session: fm-lab-passive-reads-17901-25285
+PASS: primary-screen capture N=5: 5 lines, no CR/ESC, byte-identical to text-format recent read (sha 4907ae834d67)
+PASS: primary-screen capture N=40: 40 lines, no CR/ESC, byte-identical to text-format recent read (sha a6985c311435)
+PASS: primary-screen capture N=250: 250 lines, no CR/ESC, byte-identical to text-format recent read (sha b845800ef0f0)
+--- primary capture N=5 (cat -A) ---
+$
+$
+$
+/tmp/fm-herdr-iso.LKGCXF/fm-passive-reads.2rbDtt$
+M-bM-^]M-/$
+PASS: guard refused: herdr pane read w1:p1 (rc=2)
+PASS: guard refused: herdr pane read w1:p1 --source recent --lines 200 (rc=2)
+PASS: guard refused: herdr pane read w1:p1 --source=recent-unwrapped (rc=2)
+PASS: guard refused: herdr agent read w1:p1 (rc=2)
+PASS: guard refused: herdr agent read w1:p1 --format text --source recent (rc=2)
+PASS: guard refused: herdr pane read w1:p1 --format=text (rc=2)
+PASS: no refused read reached herdr (call log empty)
+refusal message: error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+PASS: guard allowed: herdr pane read w1:p1 --source recent --lines 200 --format ansi
+PASS: guard allowed: herdr pane read w1:p1 --source visible
+PASS: guard allowed: herdr pane read w1:p1 --source detection
+PASS: guard allowed: herdr pane read w1:p1 --ansi
+PASS: guard allowed: herdr pane read w1:p1 --raw
+FAIL: guard blocked allowed form: agent read w1:p1 --source visible rc=1
+agent: {"agent":"claude","agent_status":"done"}
+visible viewport rows (text, trimmed): 40
+NEW capture: rows=40 distinct-captures=1; viewport samples=590 distinct=1
+PASS: fullscreen capture has no CR/ESC
+PASS: viewport never moved during 5 adapter captures (590 samples, 1 distinct)
+PASS: fullscreen capture equals the visible viewport text
+--- capture tail (cat -A, last 8) ---
+M-bM-^\M-; Cooked for 3s M-BM-7 done 6:55 PM$
+$
+M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@$
+M-bM-^]M-/$
+M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@M-bM-^TM-^@$
+  M-bM-^ZM-  Transcript saving is off M-bM-^@M-^T inherited CLAUDE_CODE_CHILD_SESSION marker M-BM-7 restart with CLAUDE_CODE_FORCE_SESSION_PEM-bM-^@M-&$
+  Opus 5.5 (medium) v2.1.289 | fm-passive-reads.2rbDtt | ctx 21k/1M (2%) | 5h: 34% (resets 3h4m) | 7d: 3% (resets 6d2M-bM-^@M-&$
+  M-bM-^OM-5M-bM-^OM-5 bypass permissions on (shift+tab to cycle)$
+OLD text read: rows=40 (viewport 40); viewport samples=589 distinct=1
+old read contains early integers: 0 short-number rows; new capture: 0
+teardown: ok
+
+NOTE (tester): the one FAIL above, `agent read w1:p1 --source visible rc=1`, targeted the plain shell pane w1:p1, which is not a herdr agent, so herdr itself rejects the agent read; the guard passed it through. Re-run against the idle Claude agent pane in live-guard-and-primary.log: rc=0 for --source visible, --format ansi, and --source detection.
+The baseline text `--source recent --lines 200` read also returned only the 40-row viewport with the viewport unchanged, so this headless lab (no attached viewer) did not reproduce herdr's wheel-scroll harvest; the passivity of the new ANSI capture is shown directly (590 viewport samples, 1 distinct).

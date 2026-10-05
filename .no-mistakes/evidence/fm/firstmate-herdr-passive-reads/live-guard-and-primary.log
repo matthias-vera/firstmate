@@ -1,0 +1,39 @@
+== allowed agent read forms on idle fullscreen Claude pane ==
+rc=0 lines=40: herdr agent read w1:p1 --source visible
+rc=0 lines=40: herdr agent read w1:p1 --format ansi
+rc=0 lines=40: herdr agent read w1:p1 --source detection
+== refused agent read forms ==
+rc=2: herdr agent read w1:p1 -> error: refusing 'herdr agent read' as a text read of recent output: on
+rc=2: herdr agent read w1:p1 --source recent-unwrapped --lines 50 -> error: refusing 'herdr agent read' as a text read of recent output: on
+== primary-screen shell pane ==
+N=3 identical to text-format read (3 lines)
+N=30 identical to text-format read (30 lines)
+N=250 identical to text-format read (250 lines)
+-- capture N=8 (cat -A) --
+row 297  tail$
+row 298  tail$
+row 299  tail$
+row 300  tail$
+blue$
+$
+/tmp via M-bM-^XM-^U v25.0.4 via M-nM-^\M-^X via M-pM-^_M-^PM-^M v3.14.7 via M-pM-^_M-^PM-&$
+M-bM-^]M-/$
+-- raw ansi read, same rows (cat -A) --
+^[[0m^[[1m^[[38;5;5mrow 299^[[0m  tail    ^M$
+^[[0m^[[1m^[[38;5;6mrow 300^[[0m  tail    ^M$
+^[[0m^[[48;5;4mblue M-BM-  ^[[0m^M$
+^M$
+== herdr invocations that reached the lab server (refused forms must be absent) ==
+agent read w1:p1 --source visible
+agent read w1:p1 --format ansi
+agent read w1:p1 --source detection
+pane run w2:p1 seq 1 300 | while read i; do printf "\033[1;3%dmrow %03d\033[0m  tail\t \n" $((i%7)) $i; done; printf "\033[44mblue \302\240 \033[0m\n"
+pane read w2:p1 --source recent --lines 200 --format ansi
+pane read w2:p1 --source recent --lines 200
+pane read w2:p1 --source recent --lines 200 --format ansi
+pane read w2:p1 --source recent --lines 200
+pane read w2:p1 --source recent --lines 250 --format ansi
+pane read w2:p1 --source recent --lines 250
+pane read w2:p1 --source recent --lines 200 --format ansi
+pane read w2:p1 --source recent --lines 200 --format ansi
+NOTE: the 'pane read ... --lines N' text reads on w2:p1 above are this harness's own baseline comparison reads via the lab helper, not adapter calls.
