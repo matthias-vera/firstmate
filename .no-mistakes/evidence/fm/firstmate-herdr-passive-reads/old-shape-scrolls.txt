@@ -1,0 +1,6 @@
+# old read shape (pre-change): herdr pane read --source recent --lines 200 (text) against idle alt-screen mouse-reporting claude pane
+agent stdin received:
+INPUT b'\x1b[<65;60;20M\x1b[<65;60;20M\x1b[<65;60;20M'
+INPUT b'\x1b[<64;60;20M\x1b[<64;60;20M\x1b[<64;60;20M'
+INPUT b'\x1b[<65;60;20M\x1b[<65;60;20M\x1b[<65;60;20M'
+# adapter reads (adapter-live.txt: 27 captures + visible read): agent stdin log empty afterwards

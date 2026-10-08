@@ -1,0 +1,32 @@
+== capture 200
+line 1 visible$
+line 2 visible$
+> idle composer$
+line 4 visible$
+line 5 visible$
+== capture 3
+> idle composer$
+line 4 visible$
+line 5 visible$
+== 25 rapid captures
+done
+== visible capture
+line 1 visible
+line 2 visible
+> idle composer
+== guard: text recent via cli
+error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+rc=2
+== guard: default source/format
+error: refusing 'herdr pane read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+rc=2
+== guard: agent read
+error: refusing 'herdr agent read' as a text read of recent output: on herdr 0.8.0+ that read scrolls an idle alternate-screen agent's viewport to harvest history; read with --format ansi or --source visible instead (docs/herdr-backend.md "Passive reads")
+rc=2
+== guard: allowed ansi recent
+^[[0m^[[1m^[[38;5;2mline 1 visible^[[0m  ^M
+^[[0m^[[1m^[[38;5;2mline 2 visible^[[0m  ^M
+^[[rc=0
+== guard: allowed visible text
+line 1 visible
+line 2 visible

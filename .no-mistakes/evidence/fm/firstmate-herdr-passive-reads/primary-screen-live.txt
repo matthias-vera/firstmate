@@ -1,0 +1,12 @@
+lines(200)=200 first=row 102 cr=0 esc=0
+tail10:
+row 292$
+row 293$
+row 294$
+row 295$
+row 296$
+row 297$
+row 298$
+row 299$
+row 300$
+[matthias@fedora-hp-g10]/tmp/fm-iso.xHSOMh%$
